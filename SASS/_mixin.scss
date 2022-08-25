@@ -1,0 +1,13 @@
+@mixin spinner($width, $height, $speed, $color) {
+  border-radius: 50%;
+  width: $width;
+  height: $height;
+  position: absolute;
+  border-bottom: 0.25rem solid $color;
+  animation: circle $speed linear infinite;
+}
+@mixin display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

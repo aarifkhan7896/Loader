@@ -1,0 +1,50 @@
+@import "mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  @include display();
+  height: 100vh;
+  position: relative;
+
+  .outer1 {
+    @include spinner(11.5rem, 11.5rem, 0.7s, olivedrab);
+  }
+  .outer2 {
+    @include spinner(10rem, 10rem, 0.6s, red);
+  }
+  .outer3 {
+    @include spinner(8.5rem, 8.5rem, 0.5s, olivedrab);
+  }
+  .outer4 {
+    @include spinner(7rem, 7rem, 0.6s, red);
+  }
+  .inner {
+    @include spinner(5.5rem, 5.5rem, 0.4s, goldenrod);
+  }
+  .inner2 {
+    @include spinner(4rem, 4rem, 0.5s, darkcyan);
+  }
+  .inner3 {
+    @include spinner(2.5rem, 2.5rem, 0.6s, salmon);
+  }
+  .inner4 {
+    @include spinner(1rem, 1rem, 0.3s, blueviolet);
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

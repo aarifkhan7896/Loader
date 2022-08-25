@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.container .outer1 {
+  border-radius: 50%;
+  width: 11.5rem;
+  height: 11.5rem;
+  position: absolute;
+  border-bottom: 0.25rem solid olivedrab;
+  -webkit-animation: circle 0.7s linear infinite;
+          animation: circle 0.7s linear infinite;
+}
+
+.container .outer2 {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  border-bottom: 0.25rem solid red;
+  -webkit-animation: circle 0.6s linear infinite;
+          animation: circle 0.6s linear infinite;
+}
+
+.container .outer3 {
+  border-radius: 50%;
+  width: 8.5rem;
+  height: 8.5rem;
+  position: absolute;
+  border-bottom: 0.25rem solid olivedrab;
+  -webkit-animation: circle 0.5s linear infinite;
+          animation: circle 0.5s linear infinite;
+}
+
+.container .outer4 {
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  border-bottom: 0.25rem solid red;
+  -webkit-animation: circle 0.6s linear infinite;
+          animation: circle 0.6s linear infinite;
+}
+
+.container .inner {
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  position: absolute;
+  border-bottom: 0.25rem solid goldenrod;
+  -webkit-animation: circle 0.4s linear infinite;
+          animation: circle 0.4s linear infinite;
+}
+
+.container .inner2 {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  border-bottom: 0.25rem solid darkcyan;
+  -webkit-animation: circle 0.5s linear infinite;
+          animation: circle 0.5s linear infinite;
+}
+
+.container .inner3 {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  border-bottom: 0.25rem solid salmon;
+  -webkit-animation: circle 0.6s linear infinite;
+          animation: circle 0.6s linear infinite;
+}
+
+.container .inner4 {
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  border-bottom: 0.25rem solid blueviolet;
+  -webkit-animation: circle 0.3s linear infinite;
+          animation: circle 0.3s linear infinite;
+}
+
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
